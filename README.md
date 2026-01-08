@@ -1,168 +1,36 @@
-# 🍽️ Digital Menu & Ordering Platform (MERN Stack)
+# 🍣 Le Gourmet Doré - Expérience Culinaire
 
-## 📌 Description du projet
+Bienvenue sur le dépôt du projet **Le Gourmet Doré**, une application web complète (Fullstack) alliant élégance gastronomique et fonctionnalités modernes.
 
-Ce projet consiste à développer une **application web de menus digitaux pour restaurants**, basée sur la stack **MERN (MongoDB, Express, React, Node.js)**.
+## 🌟 Aperçu du Projet
+Ce projet est une plateforme de restaurant permettant aux utilisateurs de s'inscrire pour obtenir des réductions, de consulter un menu dynamique et de passer des commandes en temps réel.
 
-L’objectif est de permettre aux restaurants de :
-
-* Créer et gérer leurs menus en ligne
-* Générer un **QR Code unique** à placer sur chaque table
-* Permettre aux clients de **scanner le QR code**, consulter le menu et **passer commande directement depuis leur téléphone**
-* Centraliser et gérer toutes les commandes côté restaurateur (prix, statut, détails)
-
-L’application vise à **digitaliser l’expérience client**, réduire les coûts d’impression et améliorer la rapidité et la précision des commandes.
-
----
-
-## 🧠 Fonctionnalités principales
-
-### 🔐 Côté Admin (Plateforme principale)
-
-* Authentification sécurisée (Admin)
-* Création et gestion des restaurants
-* Ajout, modification et suppression des menus
-* Génération automatique de QR Codes par restaurant / table
-* Visualisation globale des commandes
-* Gestion des utilisateurs restaurateurs
-
-### 🏪 Côté Restaurateur
-
-* Tableau de bord dédié
-* Gestion du menu (catégories, plats, prix, descriptions, images)
-* Réception des commandes en temps réel
-* Suivi des commandes (en attente, en cours, terminée)
-* Visualisation du chiffre d’affaires
-
-### 📱 Côté Client (via QR Code)
-
-* Accès instantané au menu sans inscription
-* Interface mobile-first
-* Consultation des catégories et plats
-* Ajout au panier
-* Passage de commande
-* Récapitulatif de commande avec total
+### 📸 Fonctionnalités clés
+* **Système de Code Promo** : Inscription utilisateur pour obtenir le code `BIENVENUE20`.
+* **Copie Intelligente** : Bouton "Copier" en un clic pour le code promotionnel.
+* **Menu Dynamique** : Affichage des plats avec bascule automatique entre prix normaux et prix réduits (-20%).
+* **Gestion de Panier** : Ajout/Suppression de plats et calcul du total en direct.
+* **Confirmation de Commande** : Génération d'un numéro de ticket unique et estimation du temps de préparation.
+* **Design Premium** : Interface élégante "Dark & Gold" optimisée pour une expérience de luxe.
 
 ---
 
-## 🛠️ Stack technique
+## 🛠️ Technologies Utilisées
 
 ### Front-end
-
-* **React.js**
-* React Router
-* Axios
-* CSS moderne
-* Responsive Design (Mobile First)
+* **HTML5 / CSS3** : Structure et design personnalisé (animations de flammes, thèmes dorés).
+* **JavaScript (Vanilla)** : Logique métier, manipulation du DOM et gestion du panier.
+* **React** : Utilisé comme serveur de développement et structure de base du projet.
 
 ### Back-end
-
-* **Node.js**
-* **Express.js**
-* JWT pour l’authentification
-* REST API
-
-### Base de données
-
-* **MongoDB**
-* Mongoose (ODM)
-
-### Autres outils
-
-* QR Code Generator
-* Cloud Storage pour images (ex: Cloudinary)
-* Git & GitHub
+* **Node.js & Express** : Serveur API pour gérer les données et la logique serveur.
+* **MongoDB** : Base de données NoSQL pour stocker les informations du restaurant et des utilisateurs.
 
 ---
 
-## 🗂️ Architecture du projet
+## 🚀 Installation et Lancement
 
-```
-root/
-│
-├── client/                # Front-end React
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   ├── hooks/
-│   │   └── App.js
-│
-├── server/                # Back-end Node.js / Express
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── middleware/
-│   ├── config/
-│   └── server.js
-│
-├── README.md
-└── package.json
-```
-
----
-
-## 🧩 Modèles de données (exemple)
-
-### Restaurant
-
-* name
-* address
-* logo
-* qrCode
-* createdAt
-
-### Menu
-
-* restaurantId
-* category
-* items[]
-
-### Item
-
-* name
-* description
-* price
-* image
-
-### Order
-
-* restaurantId
-* tableNumber
-* items
-* totalPrice
-* status
-* createdAt
-
----
-
-## 🚀 Objectifs du projet
-
-* Digitaliser les menus des restaurants
-* Améliorer l’expérience client
-* Optimiser la gestion des commandes
-* Créer une solution scalable pour plusieurs restaurants
-* Base solide pour une future version SaaS
-
----
-
-## 🔮 Évolutions futures possibles
-
-* Paiement en ligne (Stripe, PayPal)
-* Notifications en temps réel (WebSockets)
-* Gestion multi-tables
-* Statistiques avancées
-* Application mobile (React Native)
-* Mode multi-langue
-
----
-
-## 🧑‍💻 Auteur
-
-Projet développé avec la stack **MERN** dans une logique professionnelle et scalable.
-
----
-
-## 📄 Licence
-
-Ce projet est sous licence MIT.
+1. **Cloner le projet** :
+   ```bash
+   git clone [https://github.com/TON_NOM_UTILISATEUR/gourmet-dore.git](https://github.com/TON_NOM_UTILISATEUR/gourmet-dore.git)
+   cd gourmet-dore
